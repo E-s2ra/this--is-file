@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --color:#3a6cf4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;/* dizain saqat nakat */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;/* jya krdnaway la yaktr */
+    align-items: center;/* la rize xoyan lanadan */
+    padding: 10px 170px;
+    background: #eee;
+    position: fixed;/* navbaraka jegir daka*/
+     width: 100%;
+    z-index: 20000;/*hata disainakani tr nayana sar navbaraka*/
+}
+
+header nav ul{
+    display: flex; /* ba asoyy rizyan daka */
+    gap: 50px;
+    list-style: none;
+
+}
+
+ .container header #h3{
+    color: var(--color);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;/*dabi bkain bawa junka la befor absuluta*/
+}
+header nav ul li a::before{
+  content: "";
+  background-color: var(--color);
+  width: 0;/*sarata nabi dyar be inja ba hover pani dardakain*/
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.6s;
+}
+
+
+header nav ul li a:hover::before{
+    width: 100%;
+}
+
+.content{
+    padding: 100px 200px;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    background-image: url(pp.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.content h2{
+    color: #eee;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content h2 span{
+    color: blue;
+    font-size: 48px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#pic{
+    max-width: 2590px;
+    border-radius: 15%;
+ 
+}
+
+.content h3{
+    color: #eee;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.content .btn{
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: var(--color);
+    font-size: 20px;
+    padding: 15px 35px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.content .btn:hover{
+    background-color: #601cfc;
+    scale: 1.2;
+    
+}
+
+
+
+
+
+
+.content .icon a{
+    font-size: 30px;
+    text-decoration: none;
+    color:rgb(116, 192, 252);
+    padding-right: 20px;
+    transition: 0.5s;
+    display: inline-block;
+
+}
+.content .icon a:hover{
+scale: 1.7;
+}
+.snap:hover{
+    color: yellow;
+}
+.snap1:hover{
+    color:rgb(79, 79, 252);
+}
+.snap2:hover{
+    color: rgb(183, 79, 141);
+}
+.sn:hover{
+    color: rgb(86, 45, 233);
+}
+
+.services{
+    padding: 80px 0;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: var(--color);
+    font-size: 35PX;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.content-card{
+    display: flex;
+    flex-wrap: wrap;/*snur nashene */
+    justify-content: center;
+   
+
+}
+.card:hover{
+scale: 1.1;
+}
+
+
+
+
+.content-card .card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0px 5px 25px rgba(1,1,1,0.15);
+    border-radius: 15px;
+    padding: 40px 25px;
+    margin: 15px;
+    transition: 0.6s;
+}
+
+.content-card .card .ico{
+    color: var(--color);
+    text-align: center;
+    font-size: 80px;
+}
+
+.content-card .card .info h3{
+color: var(--color);
+margin-bottom: 20px;
+font-size: 25px;
+font-weight: 700;
+}
+.content-card .card .info p{
+    line-height: 25px;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+.my-card{
+
+
+    display: flex;
+    flex-wrap: wrap;/*snur nashene */
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.my-card .img-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 5px 25px rgba(1,1,1,0.15);
+    border-radius: 15px;
+    width: 400px;
+
+
+}
+.img{
+  width: 100%;
+  height: auto;
+
+}
+
+.my-h2{
+    color: #3a6cf4;
+  margin-bottom: .5em;
+}
+
+.my-p{
+    font-size: small;
+    max-width: 320px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.my-btn{
+   color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: var(--color);
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-top: 3em;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.6s;
+
+}
+
+.my-btn:hover{
+background-color: #601cfc;
+scale:(1.1);
+}
+
+
+.contact{
+    padding: 80px 0;
+
+}
+
+/* Card wrapper */
+.cord-wrapper{
+  width:100%;
+  max-width:420px; /* تۆ دەتوانیت ئەوە گۆڕیت */
+  margin: 0 auto;
+}
+
+/* Card */
+.cord{
+  background:var(--card-bg);
+  border-radius:12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+  overflow:hidden;
+  padding:20px;
+  color: #3a6cf4;
+}
+
+/* Header */
+.cord-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding-bottom:12px;
+  border-bottom:1px solid #eef2f7;
+}
+.header-icon{
+  color:var(--accent);
+  font-size:22px;
+}
+.cord-header h3{
+  font-size:18px;
+  color:#111827;
+  font-weight:700;
+}
+
+/* Grid with exactly 3 cells */
+.skills-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap:12px;
+  padding-top:14px;
+}
+
+/* Each skill box */
+.skill{
+  background:#fbfdff;
+  border:1px solid #eef2f7;
+  border-radius:10px;
+  padding:16px 10px;
+  text-align:center;
+  transition: transform .22s ease, box-shadow .22s ease;
+  cursor:default;
+}
+.skill:hover{
+  transform:translateY(-6px);
+  box-shadow: 0 10px 22px rgba(15,23,42,0.08);
+}
+.skill-icon{
+  font-size:26px;
+  color:var(--accent);
+  margin-bottom:8px;
+}
+.skill-name{
+  font-size:13px;
+  color:var(--muted);
+  font-weight:600;
+}
+
+@media(max-width:991px){
+  .content{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:40px;
+  }
+  #pic{
+    max-width:250px;
+  }
+  .skills-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+  .my-card{
+    flex-direction:column;
+    align-items:center;
+  }
+  #pic{
+    max-width:180px;
+  }
+  header nav ul{
+    flex-direction:column;
+    gap:15px;
+  }
+}
